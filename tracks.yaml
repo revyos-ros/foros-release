@@ -42,10 +42,11 @@ tracks:
     - git-bloom-generate -y rosrpm --prefix release/:{ros_distro} :{ros_distro} -i
       :{release_inc} --os-name rhel
     devel_branch: humble
+    last_release: humble
     last_version: 0.4.1
     name: foros
     patches: null
-    release_inc: '1'
+    release_inc: '2'
     release_repo_url: null
     release_tag: humble
     ros_distro: humble
