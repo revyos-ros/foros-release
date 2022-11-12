@@ -1,0 +1,48 @@
+ros-galactic-foros-inspector (0.4.1-2focal) focal; urgency=high
+
+  * foros_inspector: update package.xml depend
+    ncurses -> libncurses-dev
+  * Contributors: Wonguk Jeong
+
+ -- Wonguk Jeong <wonguk.jeong@42dot.ai>  Sat, 12 Nov 2022 15:00:00 -0000
+
+ros-galactic-foros-inspector (0.4.0-2focal) focal; urgency=high
+
+  * version 0.4.0
+  * foros_inspector: fix uninitialized field
+    fix CID 257434
+  * Contributors: Wonguk Jeong
+
+ -- Wonguk Jeong <wonguk.jeong@42dot.ai>  Wed, 26 Oct 2022 15:00:00 -0000
+
+ros-galactic-foros-inspector (0.3.1-2focal) focal; urgency=high
+
+  * Version 0.3.1
+    - inspector UI enhanced
+    - unit test updated
+  * foros_inspector: use color to improve visibility
+  * Contributors: Wonguk Jeong
+
+ -- Wonguk Jeong <wonguk.jeong@42dot.ai>  Tue, 26 Apr 2022 15:00:00 -0000
+
+ros-galactic-foros-inspector (0.3.0-2focal) focal; urgency=high
+
+  * Version 0.3.0
+    - inspector introduced
+    - locking added for multithreading
+  * foros_inspector: refine code, handle size mismatch
+  * foros_inspector: initial commit
+    display cluster status using ncurses
+    1) show all clusters (summary view)
+    2) show nodes list of each cluster (detail view)
+  * Contributors: Wonguk Jeong
+
+ -- Wonguk Jeong <wonguk.jeong@42dot.ai>  Sun, 24 Apr 2022 15:00:00 -0000
+
+ros-galactic-foros-inspector (0.1.0-2focal) focal; urgency=high
+
+
+
+ -- Wonguk Jeong <wonguk.jeong@42dot.ai>  Tue, 21 Dec 2021 15:00:00 -0000
+
+
