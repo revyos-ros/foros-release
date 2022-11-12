@@ -72,7 +72,7 @@ class ClusterNodePublisher : public rclcpp::Publisher<MessageT, Alloc> {
    *
    * \param[in] msg a message to publish.
    */
-  void publish(std::unique_ptr<MessageT, MessageDeleter> msg) {
+  void publish(std::unique_ptr<MessageT, MessageDeleter> msg) override {
     if (node_lifecycle_interface_ != nullptr &&
         !node_lifecycle_interface_->is_activated()) {
       // ignore publish request when publisher is not activated
@@ -88,7 +88,7 @@ class ClusterNodePublisher : public rclcpp::Publisher<MessageT, Alloc> {
    *
    * \param[in] msg a message to publish.
    */
-  void publish(const MessageT& msg) {
+  void publish(const MessageT& msg) override {
     if (node_lifecycle_interface_ != nullptr &&
         !node_lifecycle_interface_->is_activated()) {
       // ignore publish request when publisher is not activated
