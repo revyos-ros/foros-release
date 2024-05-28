@@ -1,0 +1,52 @@
+From 852678f3938923e71164390d5669cdfe08aa1b0b Mon Sep 17 00:00:00 2001
+From: Zheng Junjie <zhengjunjie@iscas.ac.cn>
+Date: Tue, 28 May 2024 14:59:34 +0800
+Subject: [PATCH] add 0001-add-miss-cstdint.patch.
+
+---
+ debian/patches/0001-add-miss-cstdint.patch | 24 ++++++++++++++++++++++
+ debian/patches/series                      |  1 +
+ 2 files changed, 25 insertions(+)
+ create mode 100644 debian/patches/0001-add-miss-cstdint.patch
+ create mode 100644 debian/patches/series
+
+diff --git a/debian/patches/0001-add-miss-cstdint.patch b/debian/patches/0001-add-miss-cstdint.patch
+new file mode 100644
+index 0000000..161a295
+--- /dev/null
++++ b/debian/patches/0001-add-miss-cstdint.patch
+@@ -0,0 +1,24 @@
++From 1d959dae2e15f8a7e1b0355546ddd6d1e3b35049 Mon Sep 17 00:00:00 2001
++From: Zheng Junjie <zhengjunjie@iscas.ac.cn>
++Date: Tue, 28 May 2024 14:58:30 +0800
++Subject: [PATCH] add miss <cstdint>
++
++---
++ src/common/node_util.hpp | 1 +
++ 1 file changed, 1 insertion(+)
++
++diff --git a/src/common/node_util.hpp b/src/common/node_util.hpp
++index 69f21c9..1ab14e5 100644
++--- a/src/common/node_util.hpp
+++++ b/src/common/node_util.hpp
++@@ -18,6 +18,7 @@
++ #define AKIT_FAILOVER_FOROS_COMMON_NODE_UTIL_HPP_
++ 
++ #include <string>
+++#include <cstdint>
++ 
++ namespace akit {
++ namespace failover {
++-- 
++2.41.0
++
+diff --git a/debian/patches/series b/debian/patches/series
+new file mode 100644
+index 0000000..9201480
+--- /dev/null
++++ b/debian/patches/series
+@@ -0,0 +1 @@
++0001-add-miss-cstdint.patch
+-- 
+2.41.0
+
