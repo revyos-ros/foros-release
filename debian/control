@@ -1,0 +1,12 @@
+Source: ros-humble-foros-inspector
+Section: misc
+Priority: optional
+Maintainer: Wonguk Jeong <wonguk.jeong@42dot.ai>
+Build-Depends: debhelper (>= 9.0.0), libncurses-dev, ros-humble-ament-cmake, ros-humble-ament-lint-common <!nocheck>, ros-humble-foros-msgs, ros-humble-rclcpp, ros-humble-ros-workspace
+Homepage: 
+Standards-Version: 3.9.2
+
+Package: ros-humble-foros-inspector
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, libncurses-dev, ros-humble-foros-msgs, ros-humble-rclcpp, ros-humble-ros-workspace
+Description: Fail over ROS inspector
