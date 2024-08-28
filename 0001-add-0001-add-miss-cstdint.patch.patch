@@ -1,4 +1,4 @@
-From 852678f3938923e71164390d5669cdfe08aa1b0b Mon Sep 17 00:00:00 2001
+From 0df21aef6bb609c08aa0b5967aaf5fcb0e785c5d Mon Sep 17 00:00:00 2001
 From: Zheng Junjie <zhengjunjie@iscas.ac.cn>
 Date: Tue, 28 May 2024 14:59:34 +0800
 Subject: [PATCH] add 0001-add-miss-cstdint.patch.
@@ -48,5 +48,5 @@ index 0000000..9201480
 @@ -0,0 +1 @@
 +0001-add-miss-cstdint.patch
 -- 
-2.41.0
+2.45.2
 
