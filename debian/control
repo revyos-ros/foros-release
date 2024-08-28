@@ -1,0 +1,12 @@
+Source: ros-humble-foros-examples
+Section: misc
+Priority: optional
+Maintainer: Wonguk Jeong <wonguk.jeong@42dot.ai>
+Build-Depends: debhelper (>= 9.0.0), ros-humble-ament-cmake, ros-humble-ament-lint-common <!nocheck>, ros-humble-foros, ros-humble-rclcpp, ros-humble-std-msgs, ros-humble-std-srvs, ros-humble-ros-workspace
+Homepage: 
+Standards-Version: 3.9.2
+
+Package: ros-humble-foros-examples
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, ros-humble-foros, ros-humble-rclcpp, ros-humble-std-msgs, ros-humble-std-srvs, ros-humble-ros-workspace
+Description: Fail over ROS examples
